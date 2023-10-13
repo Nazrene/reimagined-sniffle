@@ -1,0 +1,111 @@
+body {
+    background: linear-gradient(to bottom, #0d21d8, #8a3667);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #3e940c;
+    color: #0a0a0a;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    margin-inline: 100px;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    text-align: justify;
+}
+
+button {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.breed-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    margin: 10px;
+    text-align:bottom;
+    image-orientation: flip;
+}
+
+.breed-box {
+    background: #fff;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    display: grid;
+    flex-direction:row; 
+    align-items: center;
+} 
+
+.breed-box img {
+    max-width: 300px; 
+    height: 200px; 
+    margin-bottom: 5px;
+     display: grid; 
+}
+
+.breed-box h3 {
+    font-size: 1.2em; 
+    margin: 10px 0; 
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    opacity: 100%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s; 
+}
+
+.close:hover {
+    color: red; 
+}
+
