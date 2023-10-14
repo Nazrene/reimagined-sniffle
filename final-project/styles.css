@@ -6,12 +6,19 @@ body {
 }
 
 header {
-    background: #3e940c;
+    background: #20044e;
     color: #0a0a0a;
     padding: 10px;
-    display: flex;
+    display: block;
     justify-content: space-evenly;
     align-items: center;
+    background-image: url('https://www.treehugger.com/thmb/gOTFHVe3iTBVOhunhqSj2_TK86k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-922841020-e4bf98b5345042c0b04b3884a2ed91a4.jpg');
+    font-size: large;
+}
+
+header>ul>li {
+    display: inline-block;
+    text-align: center;
 }
 
 h1 {
@@ -21,7 +28,7 @@ h1 {
 
 h2 {
     margin: 0;
-    text-align: justify;
+    text-align: left;
 }
 
 button {
@@ -33,43 +40,33 @@ button {
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.breed-box {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    width: 200px;
-    margin: 10px;
-    text-align:bottom;
-    image-orientation: flip;
-}
-
-.breed-box {
-    background: #fff;
-    border: 5px solid #ddd;
-    border-radius: 10px;
-    padding: 10px;
-    width: 300px;
-    margin: 10px;
-    text-align: center;
     display: grid;
-    flex-direction:row; 
-    align-items: center;
-} 
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+    padding: 15px;
+    background-image: url('https://img.freepik.com/premium-photo/wide-field-with-yellow-rapeseed-flowers-green-grass-picturesque-sky-field-sunny-spring-day_199743-9767.jpg');
+    background-size: cover;
+}
+
+.breed-box {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 300px;
+  height: fit-content;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
 
 .breed-box img {
-    max-width: 300px; 
-    height: 200px; 
+    width: 290px; 
+    height: 250px; 
     margin-bottom: 5px;
      display: grid; 
 }
 
-.breed-box h3 {
+.breed-box h2 {
     font-size: 1.2em; 
     margin: 10px 0; 
 }
